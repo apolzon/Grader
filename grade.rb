@@ -12,9 +12,6 @@ class Grade
 	end
 
 	def <=>(other)
-		# Return -1 if self is < other
-		# Return 0 if self == other
-		# Return +1 if self > other
 		if @letter != other.letter
 			# We want to flip the polarity of this one (a comes before b, but we want it to be a > b)
 			# So we flip the side that self and input are on
