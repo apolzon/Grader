@@ -3,7 +3,7 @@ class Grade
 	attr_accessor :letter, :modifier
 	def initialize(value)
 		# separate letter from identifier
-		@letter = value[0].chr
+		@letter = value[0].chr.upcase
 		unless value[1].nil?
 			@modifier = (value[1].chr == "+") ? 1 : -1
 		else
